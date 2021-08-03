@@ -1,0 +1,18 @@
+.header .logo{
+	align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*========================================admin womens_clothes================*/
+.modal-body{
+	background-color: #dadada;
+}
+.form_container::placeholder{
+	color: #111;
+}
+
+/* Card Form  */
+.card-body.d-flex.cardForm {
+    background: linear-gradient(#73c2ff,#fff);
+}
