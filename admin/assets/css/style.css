@@ -1,0 +1,23 @@
+.header .logo{
+	align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*========================================admin womens_clothes================*/
+.modal-body{
+	background-color: #dadada;
+}
+.form_container::placeholder{
+	color: #111;
+}
+
+.dropdown_div{
+	display: flex;
+    flex-direction: row-reverse;
+}
+
+.customBtn{
+	background-color: transparent;
+	border: none;
+}
