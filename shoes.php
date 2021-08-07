@@ -50,16 +50,7 @@ include_once("includes/header.php");
 
                 <div class="d-flex justify-content-between">
 
-                    <div class="select-box">
-                        <select name="sorting" id="">
-                            <option value="Default Sorting" selected>Default Sorting</option>
-                            <option value="Sort by Popularity">Sort by Popularity</option>
-                            <option value="Sort by average rating">Sort by average rating</option>
-                            <option value="Sort by latest">Sort by latest</option>
-                            <option value="Sort by price:low to high">Sort by price:low to high</option>
-                            <option value="Sort by price:high to low">Sort by price:high to low</option>
-                        </select>
-                    </div>
+
 
                     <div>
                         <p>Showing all <span class="font-weight-bold" style="color: #f84258;"><?php echo $count; ?></span> results</p>
@@ -96,7 +87,12 @@ include_once("includes/header.php");
                                         </div>
                                         <div class="card-footer d-flex justify-content-between">
                                             <div><del><span style="color: #ccc;">₹<?php echo $row["cost"]; ?></span></del> <span class="font-weight-bold mx-2"> ₹<?php echo $row["price"]; ?></span></div>
-                                            <div><a class="cart" href="javascript:void(0);"><i class="fas fa-shopping-cart" onclick="addToCart(<?php echo $row['id']; ?>)"></i></a></div>
+
+                                            <div class="d-flex justify-content-between w-25">
+                                                <div><a class="cart" href="javascript:void(0);"><i class="fas fa-heart" data-toggle="tooltip" data-placement="top" title="Add to Wishlist" onclick="addToWish(<?php echo $row['id']; ?>)"></i></a></div>
+
+                                                <div><a class="cart" href="javascript:void(0);"><i class="fas fa-shopping-cart" data-toggle="tooltip" data-placement="top" title="Add to Cart" onclick="addToCart(<?php echo $row['id']; ?>)"></i></a></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
