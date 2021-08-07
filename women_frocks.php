@@ -40,18 +40,9 @@ include_once("includes/header.php");
 
                 <div class="d-flex justify-content-between">
 
-                    <div class="select-box">
-                        <select name="sorting" id="">
-                            <option value="Default Sorting" selected>Default Sorting</option>
-                            <option value="Sort by Popularity">Sort by Popularity</option>
-                            <option value="Sort by average rating">Sort by average rating</option>
-                            <option value="Sort by latest">Sort by latest</option>
-                            <option value="Sort by price:low to high">Sort by price:low to high</option>
-                            <option value="Sort by price:high to low">Sort by price:high to low</option>
-                        </select>
-                    </div>
+
                     <?php
-                    $sql = "SELECT * FROM `products` WHERE `prod_category` LIKE 'frock' AND `fashion` LIKE 'girl'";
+                    $sql = "SELECT * FROM `products` WHERE `prod_category` LIKE '%frock%' AND `fashion` LIKE 'girl'";
                     $result = $conn->query($sql);
                     $count = 0;
                     if ($result->num_rows > 0) {
@@ -68,7 +59,7 @@ include_once("includes/header.php");
                 <div class="container">
                     <div class="row text-left">
                         <?php
-                        $sql = "SELECT * FROM `products` WHERE `prod_category` LIKE 'frock' AND `fashion` LIKE 'girl'";
+                        $sql = "SELECT * FROM `products` WHERE `prod_category` LIKE '%frock%' AND `fashion` LIKE 'girl'";
                         $result = $conn->query($sql);
 
                         if ($result->num_rows > 0) {

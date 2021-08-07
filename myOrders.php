@@ -29,7 +29,7 @@ include_once("includes/checkout_header.php");
                 <tbody id="prod_data">
                     <?php
                     $sno = 0;
-                    $sql = "SELECT * FROM `orders_items` FULL JOIN `orders` WHERE order_id=orders.id AND userId='$userID'";
+                    $sql = "SELECT * FROM `orders_items` FULL JOIN `orders` WHERE order_id=orders.id AND userId='$userID' order by orders.id desc";
                     //SELECT * FROM `users_data` WHERE userId='$userID' 
 
                     $result = $conn->query($sql);

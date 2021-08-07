@@ -57,7 +57,7 @@ include_once("includes/header.php");
                                 <div class="col-lg-5 col-md-5 col-xl-5 col-10 offset-1 offset-lg-0 offset-xl-0 offset-md-0 viewProductimg">
                                     <div class="card">
                                         <div class="card-header">
-                                            <img src="admin/assets/images/products/<?php echo $allimg[0]; ?>" class="img-fluid" alt="Dynamic">
+                                            <img src="admin/assets/images/products/<?php echo $allimg[0]; ?>" class="img-fluid" alt="Dynamic" onclick="openModal();currentSlide(1)">
                                         </div>
                                         <div class="card-footer d-flex justify-content-between">
                                             <img src="admin/assets/images/products/<?php echo $allimg[1]; ?>" class="img-fluid secondImg" height="100" width="100" alt="Dynamic">

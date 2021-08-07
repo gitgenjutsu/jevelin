@@ -115,7 +115,7 @@ include_once("config.php");
                                     <?php
                                     for ($i = 0; $i < $numofimg; $i++) {
                                     ?>
-                                        <img src="admin/assets/images/products/<?php echo $allimg[$i]; ?>" class="img-fluid" alt="Img nf" />
+                                        <img src="admin/assets/images/products/<?php echo $allimg[$i]; ?>" class="img-fluid imgLoading" alt="Img nf" />
                                     <?php } ?>
                                 </a>
 
